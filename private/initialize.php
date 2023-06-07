@@ -23,9 +23,12 @@
   define("WWW_ROOT", $doc_root);
 
   require_once('functions.php');
-  
-  // Load class definitions manually
 
-  // Autoload class definitions
+  require_once('classes/bicycle.class.php');
+  require_once('classes/parsecsv.class.php');
+  
+  foreach(glob('classes/*.class.php') as $file) {
+    require_once($file);
+  }
 
 ?>
