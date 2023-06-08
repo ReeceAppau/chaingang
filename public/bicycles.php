@@ -7,6 +7,7 @@
 <?php include(SHARED_PATH . '/public_header.php'); ?>
 
 <div id="main">
+  <a id="navItem" href="<?php echo url_for('/index.php'); ?>">Home</a>
 
   <div id="page">
     <div class="intro">
